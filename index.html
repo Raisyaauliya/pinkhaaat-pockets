@@ -1,7 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pinkhaaat Threat Intel Hub</title>
+
+  <!-- kalau pakai file CSS terpisah -->
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
+  <!-- HERO PINKHAAAT -->
   <header class="hero-header">
     <div class="hero-left">
-      <!-- kalau file sprite kamu ada di repo, ganti src jadi relatif, contoh: src="assets/pinkhaaat.png" -->
+      <!-- pastikan file ini ada di repo: /assets/pinkhaaat.png -->
       <img src="assets/pinkhaaat.png" 
            alt="Pinkhaaat Woman in Cyber Sprite Sheet" 
            class="hero-pinkhaaat">
@@ -15,7 +25,7 @@
     </div>
   </header>
 
-  <!-- strip credit di tengah -->
+  <!-- STRIP CREDIT NETRAL DI TENGAH -->
   <div class="hero-divider">
     <span class="hero-divider-text">
       Made with love by Raisya Auliya Salsabila · 
@@ -24,4 +34,58 @@
     </span>
   </div>
 
-  <main
+  <!-- KONTEN UTAMA -->
+  <main>
+    <section class="threat-section">
+      <h2 class="section-title">Pinkhaaat Threat Intel Hub</h2>
+
+      <div class="grid">
+        <!-- CARD 1 -->
+        <div class="card">
+          <img src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2F6zQoMjQu6bo0s8hctCjk%2Fotx.png?alt=media&token=e5f2d6e2-0aee-4128-9563-8af675e9a78e" 
+               alt="OTX" class="icon">
+          <h3>AlienVault OTX</h3>
+          <p>Global community-powered threat intelligence feed.</p>
+          <a href="https://otx.alienvault.com" target="_blank" class="btn">
+            Deep Analyze with AlienVault OTX →
+          </a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+          <img src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2F6zQoMjQu6bo0s8hctCjk%2Fvt.png?alt=media&token=9332f84b-866f-4660-b987-af6256ed56a9" 
+               alt="VirusTotal" class="icon">
+          <h3>VirusTotal</h3>
+          <p>Multi-engine file and URL malware scanning.</p>
+          <a href="https://www.virustotal.com" target="_blank" class="btn">
+            Deep Analyze with VirusTotal →
+          </a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+          <img src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2F6zQoMjQu6bo0s8hctCjk%2Fmb.png?alt=media&token=baf57009-5f81-4867-83da-fc816dba7cd2" 
+               alt="MalwareBazaar" class="icon">
+          <h3>MalwareBazaar</h3>
+          <p>Curated malware sample repository for analysts.</p>
+          <a href="https://bazaar.abuse.ch" target="_blank" class="btn">
+            Deep Analyze with MalwareBazaar →
+          </a>
+        </div>
+
+        <!-- LIVE THREAT MAP -->
+        <div class="threat-map">
+          <h3 class="map-title">🌐 Live Threat Map</h3>
+          <iframe 
+            src="https://fortiguard.fortinet.com/threat-map"
+            class="live-map"
+            loading="lazy"
+            title="Live Cyber Threat Map">
+          </iframe>
+          <p class="map-credit">Powered by FortiGuard Labs™</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
